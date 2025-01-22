@@ -3,5 +3,17 @@ import category from './category'
 import post from './post'
 import author from './author'
 import project from './project'
+import settings from './settings/settings'
+import navigation from './settings/navigation'
+import link from './settings/link'
 
-export const schemaTypes = [post, author, category, project, blockContent]
+export const schemaTypes = [
+    post,
+    author,
+    category,
+    project,
+    blockContent,
+    settings,
+    navigation,
+    link
+]
