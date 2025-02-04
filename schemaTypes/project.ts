@@ -13,7 +13,12 @@ export default defineType({
         }),
         defineField({
             name: 'slug',
-            type: 'slug'
+            title: 'Slug',
+            type: 'slug',
+            options: {
+                source: 'title',
+                maxLength: 96,
+            },
         }),
         defineField({
             title: "Featured image",

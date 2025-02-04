@@ -6,8 +6,11 @@ import project from './project'
 import settings from './settings/settings'
 import navigation from './settings/navigation'
 import link from './settings/link'
+import home from './home'
+import featuredProjects from './objects/featuredProjects'
 
 export const schemaTypes = [
+    home,
     post,
     author,
     category,
@@ -15,5 +18,6 @@ export const schemaTypes = [
     blockContent,
     settings,
     navigation,
-    link
+    link,
+    featuredProjects
 ]
