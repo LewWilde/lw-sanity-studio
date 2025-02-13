@@ -8,6 +8,8 @@ import navigation from './settings/navigation'
 import link from './settings/link'
 import home from './home'
 import featuredProjects from './objects/featuredProjects'
+import gallery from './objects/gallery';
+import tag from './tag'
 
 export const schemaTypes = [
     home,
@@ -19,5 +21,7 @@ export const schemaTypes = [
     settings,
     navigation,
     link,
-    featuredProjects
+    featuredProjects,
+    gallery,
+    tag
 ]

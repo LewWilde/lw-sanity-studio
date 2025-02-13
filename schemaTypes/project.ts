@@ -1,6 +1,4 @@
-import { defineField, defineType } from 'sanity'
-import blockContent from './blockContent'
-
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
     name: 'project',
@@ -26,9 +24,34 @@ export default defineType({
             type: 'image',
         }),
         defineField({
+            name: 'tags',
+            title: 'Tags',
+            type: 'array',
+            of: [{ type: 'reference', to: { type: 'tag' } }],
+            options: {
+                layout: 'tags'
+            },
+            validation: Rule => Rule.unique()
+        }),
+        defineField({
+            title: "Client",
+            name: "client",
+            type: "string",
+        }),
+        defineField({
+            title: "Year",
+            name: "year",
+            type: "string",
+        }),
+        defineField({
             name: 'body',
             title: 'Body',
             type: 'blockContent',
+        }),
+        defineField({
+            name: 'gallery',
+            title: 'Gallery',
+            type: 'gallery',
         }),
     ]
 })
