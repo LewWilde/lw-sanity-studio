@@ -10,10 +10,20 @@ export default defineType({
             title: 'Text',
             type: 'string',
         }),
-        defineField({
-            title: 'URL',
-            name: 'url',
+        {
+            name: 'internal',
+            type: 'reference',
+            to: [{ type: 'project' }, { type: 'post' }],
+            hidden: ({ parent, value }) => !value && !!parent?.external
+        },
+        {
+            name: 'external',
             type: 'url',
-        })
+            title: 'External',
+            hidden: ({ parent, value }) => {
+                return !value && !!parent?.internal
+            }
+        },
+
     ],
 })
