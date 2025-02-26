@@ -13,7 +13,7 @@ export default defineType({
         {
             name: 'internal',
             type: 'reference',
-            to: [{ type: 'project' }, { type: 'post' }],
+            to: [{ type: 'page' }, { type: 'project' }, { type: 'post' }],
             hidden: ({ parent, value }) => !value && !!parent?.external
         },
         {
