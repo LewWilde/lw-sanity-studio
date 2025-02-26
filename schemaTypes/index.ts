@@ -1,15 +1,15 @@
 import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
-import project from './project'
+import category from './documents/category'
+import post from './documents/post'
+import author from './documents/author'
+import project from './documents/project'
 import settings from './settings/settings'
 import navigation from './settings/navigation'
 import link from './settings/link'
-import home from './home'
+import home from './documents/home'
 import featuredProjects from './objects/featuredProjects'
 import gallery from './objects/gallery';
-import tag from './tag'
+import tag from './documents/tag'
 
 export const schemaTypes = [
     home,
