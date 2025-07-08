@@ -4,7 +4,7 @@ export default defineType({
     name: 'gallery',
     title: 'Gallery',
     type: 'array',
-    of: [{ type: 'image' }],
+    of: [{ type: 'image' }, { type: 'video' }],
     options: {
         layout: 'grid'
     }

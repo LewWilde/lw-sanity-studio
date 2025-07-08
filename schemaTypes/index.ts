@@ -10,7 +10,8 @@ import link from './settings/link'
 import home from './documents/home'
 import featuredProjects from './objects/featuredProjects'
 import gallery from './objects/gallery';
-import tag from './documents/tag'
+import tag from './documents/tag';
+import video from './objects/video'
 
 export const schemaTypes = [
     home,
@@ -25,5 +26,6 @@ export const schemaTypes = [
     link,
     featuredProjects,
     gallery,
-    tag
+    tag,
+    video
 ]
