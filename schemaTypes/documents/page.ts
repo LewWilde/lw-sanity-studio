@@ -21,7 +21,7 @@ export default defineType({
         }),
         defineField({
             title: "Featured image",
-            name: "featuredimage",
+            name: "featuredImage",
             type: 'image',
         }),
         defineField({
