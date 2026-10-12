@@ -16,12 +16,12 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/code-input": "^5.1.2",
-    "@sanity/vision": "^3.71.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sanity": "^3.71.0",
-    "sanity-plugin-media": "^2.3.2",
+    "@sanity/code-input": "^7.3.11",
+    "@sanity/vision": "^6.18.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.18.0",
+    "sanity-plugin-media": "^6.3.4",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

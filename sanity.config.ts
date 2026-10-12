@@ -4,7 +4,7 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemaTypes'
 import { codeInput } from '@sanity/code-input'
 import { structure } from './structure/stucture'
-import {media} from 'sanity-plugin-media'
+import { media } from 'sanity-plugin-media'
 
 export default defineConfig({
   name: 'default',
@@ -12,6 +12,7 @@ export default defineConfig({
 
   projectId: 'fonsarce',
   dataset: 'production',
+  reactStrictMode: true,
 
   plugins: [structureTool({ structure }), visionTool(), codeInput(), media()],
 
