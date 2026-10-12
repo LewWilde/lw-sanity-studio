@@ -20,6 +20,12 @@ export default defineType({
             },
         }),
         defineField({
+            name: 'publishedAt',
+            title: 'Published date',
+            type: 'datetime',
+            initialValue: () => new Date().toISOString(),
+        }),
+        defineField({
             title: "Featured image",
             name: "featuredImage",
             type: 'image',

@@ -20,6 +20,12 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'publishedAt',
+      title: 'Published date',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
